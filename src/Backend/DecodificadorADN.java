@@ -5,6 +5,8 @@
  */
 package Backend;
 
+import java.util.Scanner;
+
 /**
  *
  * @author dany
@@ -19,20 +21,28 @@ public class DecodificadorADN {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+            
+        Scanner sn = new Scanner(System.in);
+        String secuenciaA, secuenciaB;
+        
         System.out.println("----------------------------------------------------\n"
                 + colorCyan + "                Decodificador " + colorReset
                 + colorRojo + "ADN\n" + colorReset
                 + "----------------------------------------------------\n");
 
-        Comparador comparador = new Comparador("ATGTCTTCCTCGA",
-                "TGCTTCCTATGAC");
+        System.out.println("----------------------------------------------------\n"
+                         + "Ingrese la Secuencia A\n"
+                         + "----------------------------------------------------");
+        secuenciaA=sn.nextLine();
+        
+        System.out.println("----------------------------------------------------\n"
+                         + "Ingrese la Secuencia A\n"
+                         + "----------------------------------------------------");
+        secuenciaB=sn.nextLine();
 
-        Comparador comparador2 = new Comparador("ctgactga",
-                "actgagc");
-
-        Comparador comparador3 = new Comparador("cgtaattgcgat",
-                "cgtacagtagc");
+        
+        Comparador decodificador = new Comparador(secuenciaA,
+                                                  secuenciaB);
 
     }
 

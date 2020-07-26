@@ -20,15 +20,15 @@ public class Comparador {
      * @param cadena1 almacena la primera cadena string
      * @param cadena2 almacena la segunda cadena string
      */
-    public Comparador(String cadena1, String cadena2) {
+    public Comparador(String secuenciaA, String secuenciaB) {
 
         String resultado = "";
 
-        for (int i = cadena1.length(); i >= 0; i--) {
+        for (int i = secuenciaA.length(); i >= 0; i--) {
             for (int j = 0; j < i; j++) {
-                if (cadena2.contains(cadena1.substring(j, i))
-                        && resultado.length() < cadena1.substring(j, i).length()) {
-                    resultado = cadena1.substring(j, i);
+                if (secuenciaB.contains(secuenciaA.substring(j, i))
+                        && resultado.length() < secuenciaA.substring(j, i).length()) {
+                    resultado = secuenciaA.substring(j, i);
 
                 }
 
