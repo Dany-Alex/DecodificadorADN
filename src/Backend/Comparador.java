@@ -14,7 +14,7 @@ public class Comparador {
     public static final String colorVerde = "\u001B[32m";
     public static final String coloreAmarillo = "\u001B[33m";
     public static final String colorReset = "\u001B[0m";
-
+String resultado = "";
     /**
      *
      * @param cadena1 almacena la primera cadena string
@@ -22,7 +22,7 @@ public class Comparador {
      */
     public Comparador(String secuenciaA, String secuenciaB) {
 
-        String resultado = "";
+        
 
         for (int i = secuenciaA.length(); i >= 0; i--) {
             for (int j = 0; j < i; j++) {
@@ -38,7 +38,12 @@ public class Comparador {
         System.out.println("----------------------------------------------------");
         System.out.println(colorVerde + "El Resultado del analisis es: " + coloreAmarillo + resultado + colorReset);
         System.out.println("----------------------------------------------------");
+       
+    }
 
+    @Override
+    public String toString() {
+        return resultado;
     }
 
 }

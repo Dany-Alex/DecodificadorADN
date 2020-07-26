@@ -5,6 +5,8 @@
  */
 package Fronted;
 
+import Backend.Comparador;
+
 /**
  *
  * @author dany
@@ -102,7 +104,12 @@ public class DecodificadorADN extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void analizarBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_analizarBotonActionPerformed
-
+        String secuenciaA, secuenciaB,resultado;
+        secuenciaA=secuanciaATextField.getText();
+        secuenciaB=secuanciaBTextField.getText();
+        Comparador decodificador = new Comparador(secuenciaA, secuenciaB);
+        resultado=decodificador.toString();
+        resultadoTextField.setText(resultado);
     }//GEN-LAST:event_analizarBotonActionPerformed
 
     /**
