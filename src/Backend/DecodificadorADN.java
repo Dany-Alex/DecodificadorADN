@@ -31,12 +31,12 @@ public class DecodificadorADN {
                 + "----------------------------------------------------\n");
 
         System.out.println("----------------------------------------------------\n"
-                         + "Ingrese la Secuencia A\n"
+                         + "Ingrese Secuencia A\n"
                          + "----------------------------------------------------");
         secuenciaA=sn.nextLine();
         
         System.out.println("----------------------------------------------------\n"
-                         + "Ingrese la Secuencia A\n"
+                         + "Ingrese Secuencia B\n"
                          + "----------------------------------------------------");
         secuenciaB=sn.nextLine();
 
